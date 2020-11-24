@@ -324,16 +324,16 @@ footer {
 
 .main {
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .price-table {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 
   @media screen and (max-width: 39.99875em) {
     width: 80%;
     margin: 0 auto;
-    margin-bottom: 30px;
   }
 
   thead {
@@ -368,5 +368,42 @@ footer {
     a {
       margin-bottom: 0;
     }
+  }
+}
+
+.contact-form {
+  margin-bottom: 30px;
+  width: 80%;
+  margin: 0 auto;
+
+  @media screen and (max-width: 420px) {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  small {
+    color: #888;
+  }
+
+  input,
+  textarea {
+    margin-bottom: 0;
+  }
+
+  span.form-error {
+    margin-top: 2px;
+  }
+
+  button {
+    margin-bottom: 0;
+
+    @media screen and (max-width: 420px) {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  div[class$='-field'] {
+    margin-bottom: 20px;
   }
 }

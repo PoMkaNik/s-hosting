@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- custom css -->
   <link rel="stylesheet" href="css/app.css">
-  <title>SuperHosting | Hosting</title>
+  <title>SuperHosting | Contact Support</title>
 </head>
 
 <body>
@@ -53,7 +53,7 @@
               <i class="fa fa-compass"></i>
               <labe>Domains</labe>
             </a>
-            <a href="hosting.html" class="item active">
+            <a href="hosting.html" class="item">
               <i class="fa fa-server"></i>
               <labe>Hosting</labe>
             </a>
@@ -73,97 +73,39 @@
 
   <section class="middle-bar">
     <div class="grid-container">
-      <h2>Hosting Packages</h2>
-      <p>Browse our hosting packages below</p>
+      <h2>Contact Support</h2>
+      <p>Please use the form below to contact support</p>
     </div>
   </section>
 
   <section class="main">
-    <div class="grid-container">
-      <div class="grid-x grid-margin-x">
-        <div class="cell medium-4">
-          <table class="unstriped price-table">
-            <thead>
-              <tr class="price-table__header">
-                <th class="price-table__title">Simple</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="price-table__price">
-                <td>$9.99</td>
-              </tr>
-              <tr>
-                <td>1 Database</td>
-              </tr>
-              <tr>
-                <td>5GB Storage</td>
-              </tr>
-              <tr>
-                <td>10 Emails</td>
-              </tr>
-              <tr>
-                <td class="price-table__cta">
-                  <a href="#" class="button large">Buy Now</a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="cell medium-4">
-          <table class="unstriped price-table">
-            <thead>
-              <tr class="price-table__header">
-                <th class="price-table__title">Standard</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="price-table__price">
-                <td>$19.99</td>
-              </tr>
-              <tr>
-                <td>20 Databases</td>
-              </tr>
-              <tr>
-                <td>20GB Storage</td>
-              </tr>
-              <tr>
-                <td>Unlim Emails</td>
-              </tr>
-              <tr>
-                <td class="price-table__cta">
-                  <a href="#" class="button large">Buy Now</a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="cell medium-4">
-          <table class="unstriped price-table">
-            <thead>
-              <tr class="price-table__header">
-                <th class="price-table__title">Super</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="price-table__price">
-                <td>$29.99</td>
-              </tr>
-              <tr>
-                <td>Unlim Database</td>
-              </tr>
-              <tr>
-                <td>50GB Storage</td>
-              </tr>
-              <tr>
-                <td>Unlim Emails</td>
-              </tr>
-              <tr>
-                <td class="price-table__cta">
-                  <a href="#" class="button large">Buy Now</a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+    <div class="grid-contain">
+      <div class="grid-x">
+        <div class="cell large-12">
+          <form class="contact-form" data-abide>
+            <div data-abide-error class="alert callout" style="display: none;">
+              <p><i class="fi-alert"></i> There are some errors in your form.</p>
+            </div>
+            <div class="name-field">
+              <label>Name <small>required</small>
+                <input type="text" id="name" name="name" required pattern="[a-zA-Z]+">
+                <span class="form-error">Name is required and must be a string</span>
+              </label>
+            </div>
+            <div class="email-field">
+              <label>Email <small>required</small>
+                <input type="email" id="email" name="email" required>
+                <span class="form-error">An email address is required</span>
+              </label>
+            </div>
+            <div class="messsage-field">
+              <label>Message <small>required</small>
+                <textarea name="message" id="message" required></textarea>
+                <span class="form-error">Message is required</span>
+              </label>
+            </div>
+            <button type="submit" class="button large" value="Submit">Submit</button>
+          </form>
         </div>
       </div>
     </div>
