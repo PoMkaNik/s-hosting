@@ -321,3 +321,52 @@ footer {
     }
   }
 }
+
+.main {
+  margin-top: 30px;
+}
+
+.price-table {
+  text-align: center;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: 39.99875em) {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  thead {
+    border: none;
+  }
+
+  tbody {
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+  &__header {
+    background: #333;
+  }
+
+  &__title {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__price td {
+    height: 60px;
+    background: #ccc;
+    color: #000;
+    font-size: 30px;
+  }
+
+  &__cta {
+    vertical-align: bottom;
+
+    a {
+      margin-bottom: 0;
+    }
+  }
+}
